@@ -1668,17 +1668,17 @@ SP
     margin-bottom: 40px;
   }
   .project .web-img.full {
-    flex-direction: column;
+    flex-direction: row;
   }
   .project .web-img.full .img-pc {
-    width: 100%;
+    width: 60%;
     margin: 0 0 40px;
   }
   .project .web-img.full .img-pc img {
     max-width: 100%;
   }
   .project .web-img.full .img-sp {
-    width: 60%;
+    width: 40%;
     margin: 0 auto;
   }
   .project .web-img.full .img-sp img {
@@ -1843,4 +1843,24 @@ SP
   
   }
   
+}
+
+.img-pc a:hover {
+  opacity: 0.7;
+}
+
+.img-sp a:hover {
+  opacity: 0.7;
+}
+
+.url a:hover {
+  text-decoration: underline;
+}
+
+.web-img.full > div {
+
+  
+}
+.web-img.full  div:first-of-type {
+
 }
