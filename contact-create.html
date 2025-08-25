@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>KANALOGO | ポートフォリオサイト</title>
+    <meta name="description" content="クリエイターKANALOGOの作品を紹介するページです。">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./src/img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <meta property="og:url" content="ページのURL"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="KANALOGO | ポートフォリオサイト"/>
+    <meta property="og:description" content="クリエイターKANALOGOの作品を紹介するページです。"/>
+    <meta property="og:site_name" content="KANALOGO | ポートフォリオサイト"/>
+    <meta property="og:image" content="./images/"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Yomogi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./src/js/script.js"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VXGN6HCN9Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VXGN6HCN9Y');
+</script>
+  </head>
+
+  <body>
+    <header id="header" class="childHeader">
+      <h1 class="logo">
+        <a href="index.html">
+          <img src="./src/img/header_logo.png" loading="lazy" alt="WEB CREATE" width="239" height="72">
+        </a>
+      </h1>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="navi">
+        <ul class="menu">
+          <li><a class="hover-line" href="#works">WORKS <span> 制作物</span></a></li>
+          <li><a class="hover-line" href="#skills">SKILLS <span>技術</span></a></li>
+          <li><a class="hover-line" href="#about">ABOUT <span>私について</span></a></li>
+          <li><a class="hover-line" href="#contact-area">CONTACT <span>お問い合わせ</span></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="skills">
+        <div class="child_mv contact_bg">
+        <h1 class="contents-title">
+          <span class="en">CONTACT</span>
+          <span class="ja">制作依頼</span>
+        </h1>
+      </div><!-- /.child_mv -->
+
+      <div class="wrapper">
+
+      <ul class="breadCrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#" class="current">Contact</a></li>
+      </ul><!-- /.breadCrumb -->
+      </div>
+
+      <div class="contact_base_block c-wrapper">
+
+        <h2>制作依頼に関する質問などお問い合わせください</h2>
+        <form action="" method="post">
+          <p class="form_box_item">
+            <label>
+              <span class="required">必須</span>お問い合わせ種別
+              <select name="contact_title">
+                <option value="" selected>選択してください</option>
+                <option value="H.P制作を依頼したい">H.P制作を依頼したい</option>
+                <option value="CMS化について相談したい">CMS化について相談したい</option>
+                <option value="CMS化について相談したい">HPの保守・運用について相談したい</option>
+                <option value="その他">その他</option>
+              </select>
+            </label>
+          </p>
+          <p class="form_box_item">
+            <label>
+              <span class="required">必須</span>お名前
+              <input type="text" name="your_name" autocomplete="name" placeholder="山田 太郎">
+            </label>
+          </p>
+          <p class="form_box_item">
+            <label>
+              <span>任意</span>お電話番号
+              <input type="tel" name="tel" autocomplete="tel" placeholder="090-1234-5678">
+            </label>
+          </p>
+          <p class="form_box_item">
+            <label>
+              <span class="required">必須</span>メールアドレス
+              <input type="email" name="email" autocomplete="email" placeholder="example@gmail.com">
+            </label>
+          </p>
+          <div class="form_box_item">
+            <span>任意</span>ご返信方法
+            <p class="radio_item">
+              <label><input type="radio" name="reply" value="お電話">お電話</label>
+              <label><input type="radio" name="reply" value="メール">メール</label>
+            </p>
+          </div>
+          <p class="form_box_item">
+            <label>
+              <span class="required">必須</span>お問い合わせ内容
+              <textarea name="message"></textarea>
+            </label>
+          </p>
+
+          <p class="form_box_item"><button>送信する</button></p>
+        </form>
+      </div>
+
+      
+      </div>
+
+    
+
+      <div id="contact-area">
+        <p class="title">CONTACT</p>
+        <p class="text">ご質問などお気軽にお問い合わせください</p>
+        <div class="contact-btn_list">
+        <a class="contact-btn" href="contact.html">
+          お問い合わせはこちら
+          <img src="./src/img/icon-arrow-topright.svg" alt="お問い合わせのアイコン" loading="lazy" width="12" height="12">
+        </a>
+        <a class="contact-btn" href="contact.html">
+          制作依頼はこちら
+          <img src="./src/img/icon-arrow-topright.svg" alt="お問い合わせのアイコン" loading="lazy" width="12" height="12">
+        </a>
+      </div><!-- /.contact-btn_list -->
+      </div>
+    </main>
+
+    <footer id="footer">
+      <p class="copyright">© 2025 WEB CREATE</p>
+      <div class="footer-link">
+        <ul class="menu">
+          <li><a href="works.html">WORKS</a></li>
+          <li><a href="skills.html">SKILLS</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <ul class="sns">
+          <li>
+            <a href="" target="_blank">
+              <img src="./src/img/icon-sns-x.png" alt="X" width="18" height="18"  >
+            </a>
+          </li>
+          <li>
+            <a href="" target="_blank">
+              <img src="./src/img/icon-sns-instagram.png" alt="instagram" width="18" height="18">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

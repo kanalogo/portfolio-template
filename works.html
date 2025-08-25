@@ -5,10 +5,10 @@
     <title>KANALOGO | ポートフォリオサイト</title>
     <meta name="description" content="クリエイターKANALOGOの作品を紹介するページです。">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" href="./src/img/favicon.ico">
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
     <meta property="og:url" content="ページのURL"/>
-    <meta property="og:type" content="article"/>
+    <meta property="og:type" content="website"/>
     <meta property="og:title" content="KANALOGO | ポートフォリオサイト"/>
     <meta property="og:description" content="クリエイターKANALOGOの作品を紹介するページです。"/>
     <meta property="og:site_name" content="KANALOGO | ポートフォリオサイト"/>
@@ -17,22 +17,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Yomogi&display=swap" rel="stylesheet">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/91f1142cd5.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-    <script src="js/main.js" defer></script>
+    <script src="./src/js/script.js" defer></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VXGN6HCN9Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VXGN6HCN9Y');
+</script>
   </head>
 
   <body>
     <header id="header" class="childHeader">
       <h1 class="logo">
         <a href="index.html">
-          <img src="img/tpp_logo3.png" loading="lazy" alt="WEB CREATE" width="239" height="72">
+          <img src="./src/img/header_logo.png" loading="lazy" alt="WEB CREATE" width="239" height="72">
         </a>
       </h1>
       <div class="hamburger">
@@ -42,23 +49,24 @@
       </div>
       <nav class="navi">
         <ul class="menu">
-          <li><a class="hover-line" href="works.html">WORKS</a></li>
-          <li><a class="hover-line" href="skills.html">SKILLS</a></li>
-          <li><a class="hover-line" href="about.html">ABOUT</a></li>
-          <li><a class="hover-line" href="contact.html">CONTACT</a></li>
+          <li><a class="hover-line" href="#works">WORKS <span> 制作物</span></a></li>
+          <li><a class="hover-line" href="#skills">SKILLS <span>技術</span></a></li>
+          <li><a class="hover-line" href="#about">ABOUT <span>私について</span></a></li>
+          <li><a class="hover-line" href="#contact-area">CONTACT <span>お問い合わせ</span></a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       
-      <div class="works wrapper">
+      <div class="works ">
         <div class="child_mv works_bg">
         <h1 class="contents-title">
           <span class="en">WORKS</span>
           <span class="ja">制作物</span>
         </h1>
         </div>
+        <div class="wrapper">
         <ul class="breadCrumb">
           <li><a href="index.html">Home</a></li>
           <li><a href="#" class="current">Works</a></li>
@@ -68,36 +76,48 @@
           <li>
             <a href="project1.html">
               <div class="img">
-                <img src="img/Seaside_pc_main.png" loading="lazy"  alt="作品のサムネイル画像" width="1488" height="960">
+                <img src="./src/img/Seaside_pc_main.png" loading="lazy"  alt="作品のサムネイル画像" width="1488" height="960">
               </div>
               <div class="text">
+                <ul class="cat_list">
+                  <li class="cat_item">WORDPRESS</li><!-- /.cat_item -->
+                  <li class="cat_item">SASS</li><!-- /.cat_item -->
+                </ul><!-- /.cac_list -->
                 <p class="works-title">SEASIDE RESORT</p>
                 <p class="works-text">リゾートホテル SEASIDE RESORT（架空）のWebサイトを制作しました。</p>
-                <p class="see-detail"><span class="hover-line">詳細を見る</span></p>
+                <p class="see-detail"><span class="hover-line">詳細を見る <i class="fa-sharp fa-solid fa-arrow-right"></i></span></p>
               </div>
             </a>
           </li>
           <li>
             <a href="project2.html">
               <div class="img">
-                <img src="img/skyblue_pc_maIn.png" loading="lazy"  alt="作品のサムネイル画像" width="1488" height="960">
+                <img src="./src/img/skyblue_pc_maIn.png" loading="lazy"  alt="作品のサムネイル画像" width="1488" height="960">
               </div>
               <div class="text">
+                <ul class="cat_list">
+                  <li class="cat_item">WORDPRESS</li><!-- /.cat_item -->
+                  <li class="cat_item">SASS</li><!-- /.cat_item -->
+                </ul><!-- /.cac_list -->
                 <p class="works-title">SKY BUILD</p>
                 <p class="works-text">建築会社 SKY BUILD（架空）のWebサイトを制作しました。</p>
-                <p class="see-detail"><span class="hover-line">詳細を見る</span></p>
+                <p class="see-detail"><span class="hover-line">詳細を見る <i class="fa-sharp fa-solid fa-arrow-right"></i></span></p>
               </div>
             </a>
           </li>
           <li>
             <a href="project3.html">
               <div class="img">
-                <img src="img/fronthotel_pc_main.png" loading="lazy"  alt="作品のサムネイル画像" width="1488" height="960">
+                <img src="./src/img/fronthotel_pc_main.png" loading="lazy"  alt="作品のサムネイル画像" width="1488" height="960">
               </div>
               <div class="text">
+                <ul class="cat_list">
+                  <li class="cat_item">HTML</li><!-- /.cat_item -->
+                  <li class="cat_item">SASS</li><!-- /.cat_item -->
+                </ul><!-- /.cac_list -->
                 <p class="works-title">BEACH FRONT HOTEL</p>
                 <p class="works-text">高級ホテル BEACH FRONT HOTEL（架空）のWebサイトを制作しました。</p>
-                <p class="see-detail"><span class="hover-line">詳細を見る</span></p>
+                <p class="see-detail"><span class="hover-line">詳細を見る <i class="fa-sharp fa-solid fa-arrow-right"></i></span></p>
               </div>
             </a>
           </li>
@@ -105,6 +125,7 @@
 
         <h2 class="contents-subtitle">Other Works</h2>
       </div>
+    </div><!-- /.inner -->
 
       
       <!-- <ul class="other-list">
@@ -117,14 +138,14 @@
 
       <div class="swiper mySwiper">
         <div class="swiper-wrapper works_slide">
-          <div class="swiper-slide works_item"><a href="project4.html"><div class="work_image"><img src="img/campbase_pc_main.png" alt=""></div><p class="work_text">カンパニーサイト　(CAMP)/　HTML　/　6P</p><!-- /.work_text --><!-- /.work_image --></a></div>
-          <div class="swiper-slide works_item"><a href="project5.html"><div class="work_image"><img src="img/buetysalon_pc_main.png" alt=""></div><p class="work_text">ブランドサイト (化粧品)　/　HTML　/　1P</p><!-- /.work_text --><!-- /.work_image --></a></div>
-          <div class="swiper-slide works_item"><a href="project6.html"><div class="work_image"><img src="img/cafejob_pc_main.png" alt=""></div><p class="work_text">カフェサイト（カフェ）　/　HTML　/　2P　</p><!-- /.work_text --><!-- /.work_image --></a></div>
-          <div class="swiper-slide works_item"><a href="project7.html"><div class="work_image"><img src="img/nature_pc_main.png" alt=""></div><p class="work_text">カンパニーサイト（インテリア）　/　HTML　/　6P　</p><!-- /.work_text --><!-- /.work_image --></a></div>
-          <div class="swiper-slide works_item"><a href="project4.html"><div class="work_image"><img src="img/campbase_pc_main.png" alt=""></div><p class="work_text">カンパニーサイト　(CAMP)/　HTML　/　6P</p><!-- /.work_text --><!-- /.work_image --></a></div>
-          <div class="swiper-slide works_item"><a href="project5.html"><div class="work_image"><img src="img/buetysalon_pc_main.png" alt=""></div><p class="work_text">ブランドサイト (化粧品)　/　HTML　/　1P</p><!-- /.work_text --><!-- /.work_image --></a></div>
-          <div class="swiper-slide works_item"><a href="project6.html"><div class="work_image"><img src="img/cafejob_pc_main.png" alt=""></div><p class="work_text">カフェサイト（カフェ）　/　HTML　/　2P　</p><!-- /.work_text --><!-- /.work_image --></a></div>
-          <div class="swiper-slide works_item"><a href="project7.html"><div class="work_image"><img src="img/nature_pc_main.png" alt=""></div><p class="work_text">カンパニーサイト（インテリア）　/　HTML　/　6P　</p><!-- /.work_text --><!-- /.work_image --></a></div>
+          <div class="swiper-slide works_item"><a href="project4.html"><div class="work_image"><img src="./src/img/campbase_pc_main.png" alt=""></div><p class="work_text">カンパニーサイト　(CAMP)/　HTML　/　6P</p><!-- /.work_text --><!-- /.work_image --></a></div>
+          <div class="swiper-slide works_item"><a href="project5.html"><div class="work_image"><img src="./src/img/buetysalon_pc_main.png" alt=""></div><p class="work_text">ブランドサイト (化粧品)　/　HTML　/　1P</p><!-- /.work_text --><!-- /.work_image --></a></div>
+          <div class="swiper-slide works_item"><a href="project6.html"><div class="work_image"><img src="./src/img/cafejob_pc_main.png" alt=""></div><p class="work_text">カフェサイト（カフェ）　/　HTML　/　2P　</p><!-- /.work_text --><!-- /.work_image --></a></div>
+          <div class="swiper-slide works_item"><a href="project7.html"><div class="work_image"><img src="./src/img/nature_pc_main.png" alt=""></div><p class="work_text">カンパニーサイト（インテリア）　/　HTML　/　6P　</p><!-- /.work_text --><!-- /.work_image --></a></div>
+          <div class="swiper-slide works_item"><a href="project4.html"><div class="work_image"><img src="./src/img/campbase_pc_main.png" alt=""></div><p class="work_text">カンパニーサイト　(CAMP)/　HTML　/　6P</p><!-- /.work_text --><!-- /.work_image --></a></div>
+          <div class="swiper-slide works_item"><a href="project5.html"><div class="work_image"><img src="./src/img/buetysalon_pc_main.png" alt=""></div><p class="work_text">ブランドサイト (化粧品)　/　HTML　/　1P</p><!-- /.work_text --><!-- /.work_image --></a></div>
+          <div class="swiper-slide works_item"><a href="project6.html"><div class="work_image"><img src="./src/img/cafejob_pc_main.png" alt=""></div><p class="work_text">カフェサイト（カフェ）　/　HTML　/　2P　</p><!-- /.work_text --><!-- /.work_image --></a></div>
+          <div class="swiper-slide works_item"><a href="project7.html"><div class="work_image"><img src="./src/img/nature_pc_main.png" alt=""></div><p class="work_text">カンパニーサイト（インテリア）　/　HTML　/　6P　</p><!-- /.work_text --><!-- /.work_image --></a></div>
 
         </div>
         <div class="swiper-pagination"></div>
@@ -136,14 +157,20 @@
 
   
 
-      <div id="contact-area">
-        <p class="title">CONTACT</p>
-        <p class="text">ご質問などお気軽にお問い合わせください</p>
-        <a class="contact-btn" href="mailto:xxxxx@code-jump.com">
-          お問い合わせはこちら
-          <img src="img/icon-arrow-topright.svg" alt="お問い合わせのアイコン" loading="lazy" width="12" height="12">
-        </a>
-      </div>
+    <div id="contact-area">
+      <p class="title">CONTACT</p>
+      <p class="text">ご質問などお気軽にお問い合わせください</p>
+      <div class="contact-btn_list">
+      <a class="contact-btn" href="contact.html">
+        お問い合わせはこちら
+        <img src="./src/img/icon-arrow-topright.svg" alt="お問い合わせのアイコン" loading="lazy" width="12" height="12">
+      </a>
+      <a class="contact-btn" href="contact.html">
+        制作依頼はこちら
+        <img src="./src/img/icon-arrow-topright.svg" alt="お問い合わせのアイコン" loading="lazy" width="12" height="12">
+      </a>
+    </div><!-- /.contact-btn_list -->
+    </div>
     </main>
 
     <footer id="footer">
@@ -158,12 +185,12 @@
         <ul class="sns">
           <li>
             <a href="" target="_blank">
-              <img src="img/icon-sns-x.png" alt="X">
+              <img src="./src/img/icon-sns-x.png" alt="X">
             </a>
           </li>
           <li>
             <a href="" target="_blank">
-              <img src="img/icon-sns-instagram.png" alt="instagram">
+              <img src="./src/img/icon-sns-instagram.png" alt="instagram">
             </a>
           </li>
         </ul>
