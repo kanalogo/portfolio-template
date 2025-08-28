@@ -1,17 +1,17 @@
-$(function(){
+jQuery(function(){
   /*-------------------------------
   ハンバーガーメニュー
   ---------------------------------*/
-  $(".hamburger").click(function () {
-    $(this).toggleClass("active");
-    $("#header .navi").toggleClass("is_active");
-    $("#header .logo").toggleClass("is_active");
+  jQuery(".hamburger").click(function () {
+    jQuery(this).toggleClass("active");
+    jQuery("#header .navi").toggleClass("is_active");
+    jQuery("#header .logo").toggleClass("is_active");
   });
   
-  $(".navi a").click(function () {
-    $(".hamburger").removeClass("is__active");
-    $("#header .navi").removeClass("is_active");
-    $("#header .logo").removeClass("is_active");
+  jQuery(".navi a").click(function () {
+    jQuery(".hamburger").removeClass("is__active");
+    jQuery("#header .navi").removeClass("is_active");
+    jQuery("#header .logo").removeClass("is_active");
   });
 }); 
 
@@ -19,31 +19,31 @@ $(function(){
  /*-------------------------------
   ヘッダーアニメーション
   ---------------------------------*/
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-      $("#header").addClass("header_active");
-      $(".menu li").addClass("linkText_active");
+  jQuery(window).scroll(function () {
+    if (jQuery(this).scrollTop() > 100) {
+      jQuery("#header").addClass("header_active");
+      jQuery(".menu li").addClass("linkText_active");
     } else {
-      $("#header").removeClass("header_active");
-      $(".menu li").removeClass("linkText_active");
+      jQuery("#header").removeClass("header_active");
+      jQuery(".menu li").removeClass("linkText_active");
     }
   });
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 200) {
-      $(".first-visual").addClass("trans_active");
+  jQuery(window).scroll(function () {
+    if (jQuery(this).scrollTop() > 200) {
+      jQuery(".first-visual").addClass("trans_active");
     
     } else {
-      $(".first-visual").removeClass("trans_active");
+      jQuery(".first-visual").removeClass("trans_active");
       
     }
   });
 
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 1000) {
-      $(".float_box").fadeIn();
+  jQuery(window).scroll(function () {
+    if (jQuery(this).scrollTop() > 1000) {
+      jQuery(".float_box").fadeIn();
     
     } else {
-      $(".float_box").fadeOut();
+      jQuery(".float_box").fadeOut();
       
     }
   });
@@ -55,48 +55,50 @@ $(function(){
    /*-------------------------------
   トップボタン
   ---------------------------------*/
-  // $(window).scroll(function () {
-  //   if ($(this).scrollTop() > 100) {
-  //     $("#top_btn").fadeIn();
+  // jQuery(window).scroll(function () {
+  //   if (jQuery(this).scrollTop() > 100) {
+  //     jQuery("#top_btn").fadeIn();
   //   } else {
-  //     $("#top_btn").fadeOut();
+  //     jQuery("#top_btn").fadeOut();
   //   }
   // });
-
+setTimeout(function() {
   document.addEventListener("DOMContentLoaded", () => {
     const letters = document.querySelectorAll('.visual-title-en > span');
     letters.forEach((letter, index) => {
-      letter.style.animationDelay = `${index * 0.1}s`;
+      letter.style.animationDelay = `jQuery{index * 0.1}s`;
     });
   });
   
   document.addEventListener("DOMContentLoaded", () => {
     const letters2 = document.querySelectorAll('.visual-title-ja > span');
     letters2.forEach((letter2, index) => {
-      letter2.style.animationDelay = `${index * 0.1}s`;
+      letter2.style.animationDelay = `jQuery{index * 0.1}s`;
     });
   });
+}
+, 2000);
 
 
-  $(function(){
+  jQuery(function(){
     /*-------------------------------
     フロートモーダル
     ---------------------------------*/
-    $(".float_box").click(function () {
-      if($(".float_content").hasClass("float_active")) {
-        $(".float_content").removeClass("float_active");
+    jQuery(".float_box").click(function () {
+      if(jQuery(".float_content").hasClass("float_active")) {
+        jQuery(".float_content").removeClass("float_active");
         
         return false; // ここで処理を終了
       }
-      $(".float_content").addClass("float_active");
+      jQuery(".float_content").addClass("float_active");
   
       
       
     });
 
-    $(".float_closebtn").click(function () {
-      if($(".float_content").hasClass("float_active")) {
-        $(".float_content").removeClass("float_active");
+    jQuery(".float_closebtn").click(function () {
+      if(jQuery(".float_content").hasClass("float_active")) {
+        jQuery(".float_content").removeClass("float_active");
         
         return false; // ここで処理を終了
       }
@@ -150,7 +152,7 @@ $(function(){
       let subject_3 = jQuery('#about').offset().top - jQuery(window).scrollTop();
       let subject_4 = jQuery('#contact-area').offset().top - jQuery(window).scrollTop();
 
-  if($("#header .navi").hasClass(!'is_active')) {
+  if(jQuery("#header .navi").hasClass(!'is_active')) {
 
     return false; // ここで処理を終了
   } else {
@@ -250,13 +252,13 @@ window.addEventListener('load', function() {
   if (!isFirstLoad) {
     // 初回アクセス時の処理を記述
     // 例: ローディング画面の表示、セッションストレージへのフラグの保存など
-    $('.loading').delay(1000).hide(1000);
+    jQuery('.loading').delay(1000).hide(1000);
     
     // セッションストレージにフラグを保存
     sessionStorage.setItem('isFirstLoad', true);
   } else {
     // 2回目以降のアクセス時の処理を記述
-    $('.loading').hide(0);
+    jQuery('.loading').hide(0);
   }
 });
 
