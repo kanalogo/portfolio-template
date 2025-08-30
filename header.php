@@ -49,8 +49,10 @@
      </div>  
     <?php endif; ?>
 
+
+
     <header id="header" <?php if(!is_front_page()): ?> class="childHeader  <?php elseif('is_single()'): ?>header_underLine<?php endif; ?>"> 
-      <h1 class="logo <?php if(is_front_page()): ?>  fadeItem _delay7" data-scroll-animation="fadein <?php endif; ?>">
+      <h1 class="logo <?php if(is_front_page()): ?>  fadeItem _delay7" data-scroll-animation="fadein<?php endif; ?>">
         <a href="<?php echo esc_url( home_url('home')); ?>">
           <img src=" <?php echo get_theme_file_uri(); ?>/src/img/header_logo.png" loading="lazy" alt="WEB CREATE" width="239" height="72">
         </a>
@@ -62,18 +64,32 @@
       </div>
       <nav class="navi <?php if(is_front_page()): ?>fadeItem _delay8" data-scroll-animation="fadein<?php endif; ?>">
             <!-- ナビメニュー -->
-        <ul class="menu">
-          <li class="link1"><a class="hover-line" href="#top">TOP <span> トップ</span></a></li>
-          <li class="link2"><a class="hover-line" href="#works">WORKS <span> 制作物</span></a></li>
-          <li class="link3"><a class="hover-line" href="#about">ABOUT <span>私について</span></a></li>
-          <li class="link4"><a class="hover-line" href="#contact-area">CONTACT <span>お問い合わせ</span></a></li>
-        </ul>
+             <?php if(is_front_page()): ?>
+            <ul class="menu">
+            <li class="link1"><a class="hover-line" href="#top">TOP <span> トップ</span></a></li>
+            <li class="link2"><a class="hover-line" href="#works">WORKS <span> 制作物</span></a></li>
+            <li class="link3"><a class="hover-line" href="#about">ABOUT <span>私について</span></a></li>
+            <li class="link4"><a class="hover-line" href="#contact-area">CONTACT <span>お問い合わせ</span></a></li>
+             </ul>
+            <?php else: ?>
+
+        <?php $args = [
+                        'container' => false,
+                       'menu_class' => 'menu',
+                       'menu' => 'ヘッダーメニュー',
+                       'link_class' => 'hover-line', // ← aタグにclassを付与
+                     ];
+                        wp_nav_menu($args);
+                        ?>
             <!-- ナビメニュー -->
+             <?php endif; ?>
       </nav>
     
     </header>
 
-    <main>
+    <main class="<?php if(is_single()): ?>mt10<?php endif; ?>"> 
+
+    <!-- ページ毎のWrapperおよびパンクズリスト -->
 
         <?php if(is_page('about')): ?>
       <div class="about">
@@ -83,8 +99,8 @@
           <span class="ja">私について</span>
         </h1>
         </div>
-        <?php if(is_page('contact-create')): ?>
-            <div class="skills">
+        <?php elseif(is_page('contact-create')): ?>
+           
         <div class="child_mv contact_bg">
         <h1 class="contents-title">
           <span class="en">CONTACT</span>
@@ -94,8 +110,8 @@
 
     
       </div>
-      <?php elseif(is_page('contact-area')): ?>
-        <div class="skills">
+      <?php elseif(is_page('contact')): ?>
+        <div class="contact">
         <div class="child_mv contact_bg">
         <h1 class="contents-title">
           <span class="en">CONTACT</span>
@@ -128,3 +144,5 @@
         <!-- パンクズリスト -->
 
         <?php endif; ?>
+
+         <!-- ページ毎のWrapperおよびパンクズリスト -->

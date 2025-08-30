@@ -11,6 +11,7 @@
         </div>
 
         <h2 class="contents-subtitle <?php if(is_front_page()): ?>fadeItem" data-scroll-animation="fadeup<?php endif; ?>">Plan <span>料金表</span></h2>
+          <?php if(is_front_page()): ?><div class="plan_list"><?php endif; ?>
         <dl class="office-list <?php if(is_front_page()): ?>fadeItem" data-scroll-animation="fadeup<?php endif; ?>">
           <div class="item">
             <dt>プラン</dt>
@@ -73,8 +74,13 @@
           </div>
           
         </dl>
+        <?php if(is_front_page()): ?></div>
+          <div class="scroll_right fadeItem" data-scroll-animation="fadein">scroll</div><!-- /.scroll_down -->
+
+        <button class="main_btn fadeItem _delay2" data-scroll-animation="fadeleft"><a href="<?php echo esc_url( home_url('about')); ?>">プロフィール詳細</a></button><!-- /.main_btn -->
+        <?php endif; ?>
        
-        <?php if(!is_front_page()): ?>
+        <?php if(!is_front_page()): ?> 
 
       <h2 class="contents-subtitle">Hearing <span>ご相談の手順</span></h2>
       <dl class="office-list  <?php if(is_front_page()): ?> fadeItem" data-scroll-animation="fadeup<?php endif; ?>"> 

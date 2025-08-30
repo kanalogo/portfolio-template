@@ -152,7 +152,7 @@ setTimeout(function() {
       let subject_3 = jQuery('#about').offset().top - jQuery(window).scrollTop();
       let subject_4 = jQuery('#contact-area').offset().top - jQuery(window).scrollTop();
 
-  if(jQuery("#header .navi").hasClass(!'is_active')) {
+  if(jQuery("#header .navi").hasClass('is_active')) {
 
     return false; // ここで処理を終了
   } else {

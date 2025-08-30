@@ -25,105 +25,14 @@
             </div><!-- /.tab_btn -->
             <div class="tab_content tab_1" id="float1">
               <h2>ご質問などお気軽に <br>お問い合わせください</h2>
-        <form action="" method="post">
-          <p class="form_box_item">
-            <label>
-              <span class="required">必須</span>お問い合わせ種別
-              <select name="contact_title">
-                <option value="" selected>選択してください</option>
-                <option value="H.P制作を依頼したい">H.P制作を依頼したい</option>
-                <option value="コーディングを依頼したい">コーディングを依頼したい</option>
-                <option value="WORDPRESSについて相談したい">WORDPRESSについて相談したい</option>
-                <option value="その他">その他</option>
-              </select>
-            </label>
-          </p>
-          <p class="form_box_item">
-            <label>
-              <span class="required">必須</span>お名前
-              <input type="text" name="your_name" autocomplete="name" placeholder="山田 太郎">
-            </label>
-          </p>
-          <p class="form_box_item">
-            <label>
-              <span>任意</span>お電話番号
-              <input type="tel" name="tel" autocomplete="tel" placeholder="090-1234-5678">
-            </label>
-          </p>
-          <p class="form_box_item">
-            <label>
-              <span class="required">必須</span>メールアドレス
-              <input type="email" name="email" autocomplete="email" placeholder="example@gmail.com">
-            </label>
-          </p>
-          <div class="form_box_item">
-            <span>任意</span>ご返信方法
-            <p class="radio_item">
-              <label><input type="radio" name="reply" value="お電話">お電話</label>
-              <label><input type="radio" name="reply" value="メール">メール</label>
-            </p>
-          </div>
-          <p class="form_box_item">
-            <label>
-              <span class="required">必須</span>お問い合わせ内容
-              <textarea name="message"></textarea>
-            </label>
-          </p>
-
-          <p class="form_box_item"><button>送信する</button></p>
-        </form>
+              <?php echo do_shortcode('[contact-form-7 id="ff5e1f8" title="お問い合わせ"]'); ?>
 
             </div><!-- /.tab_content -->
 
             <div class="tab_content tab_2" id="float2">
               <h2>制作依頼に関する質問など <br>お問い合わせください</h2>
-        <form action="" method="post">
-          <p class="form_box_item">
-            <label>
-              <span class="required">必須</span>お問い合わせ種別
-              <select name="contact_title">
-                <option value="" selected>選択してください</option>
-                <option value="H.P制作を依頼したい">H.P制作を依頼したい</option>
-                <option value="CMS化について相談したい">CMS化について相談したい</option>
-                <option value="CMS化について相談したい">HPの保守・運用について相談したい</option>
-                <option value="その他">その他</option>
-              </select>
-            </label>
-          </p>
-          <p class="form_box_item">
-            <label>
-              <span class="required">必須</span>お名前
-              <input type="text" name="your_name" autocomplete="name" placeholder="山田 太郎">
-            </label>
-          </p>
-          <p class="form_box_item">
-            <label>
-              <span>任意</span>お電話番号
-              <input type="tel" name="tel" autocomplete="tel" placeholder="090-1234-5678">
-            </label>
-          </p>
-          <p class="form_box_item">
-            <label>
-              <span class="required">必須</span>メールアドレス
-              <input type="email" name="email" autocomplete="email" placeholder="example@gmail.com">
-            </label>
-          </p>
-          <div class="form_box_item">
-            <span>任意</span>ご返信方法
-            <p class="radio_item">
-              <label><input type="radio" name="reply" value="お電話">お電話</label>
-              <label><input type="radio" name="reply" value="メール">メール</label>
-            </p>
-          </div>
-          <p class="form_box_item">
-            <label>
-              <span class="required">必須</span>お問い合わせ内容
-              <textarea name="message"></textarea>
-            </label>
-          </p>
-
-          <p class="form_box_item"><button>送信する</button></p>
-        </form>
+        
+              <?php echo do_shortcode('[contact-form-7 id="f7be3f9" title="制作依頼"]'); ?>
         </div>
 
         <div class="tab_content tab_3" id="float3">

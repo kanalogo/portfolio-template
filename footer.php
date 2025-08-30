@@ -3,7 +3,7 @@
           <p class="title">CONTACT</p>
           <p class="text">ご質問などお気軽にお問い合わせください</p>
           <div class="contact-btn_list">
-          <a class="contact-btn" href="<?php echo esc_url( home_url( 'contact-area')); ?>">
+          <a class="contact-btn" href="<?php echo esc_url( home_url( 'contact')); ?>">
             お問い合わせはこちら
             <img src=" <?php echo get_theme_file_uri(); ?>/src/img/icon-arrow-topright.svg" alt="お問い合わせのアイコン" loading="lazy" width="12" height="12">
           </a>
@@ -25,13 +25,15 @@
       <div class="footer-link">
 
       <!-- ナビメニュー -->
-        <ul class="menu">
-          <li><a href="#works">WORKS</a></li>
-          <li><a href="#skills">SKILLS</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#contact-area">CONTACT</a></li>
-        </ul>
+                     <?php $args = [
+                        'container' => false,
+                       'menu_class' => 'menu',
+                       'menu' => 'フッターナビ',
+                     ];
+                        wp_nav_menu($args);
+                        ?>
      <!-- ナビメニュー -->
+    
 
         <ul class="sns">
           <li>
